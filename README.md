@@ -22,9 +22,9 @@ TypeError: dispatch is not a function
 
 The use of wrappers will get tests running and greatly reduces having to retype a lot of boilerplate testing code.
 
-In order to get Redux to work there's [this:](https://testing-library.com/docs/example-react-redux)
+In order to get Redux to work there's [this](https://testing-library.com/docs/example-react-redux).
 
-And in order to get React Router to work there's [this:](https://testing-library.com/docs/example-react-router)
+And in order to get React Router to work there's [this](https://testing-library.com/docs/example-react-router).
 
 These can be combined to get them both working together with RTL. The following code is from `utils/test-utils.js` located in the `src` dir of this repo.
 
