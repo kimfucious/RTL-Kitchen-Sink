@@ -41,7 +41,10 @@ export const SignIn = () => {
   };
 
   return (
-    <div className="container d-flex flex-column align-items-center justify-content-center w-100 vh-100 text-muted animate__animated animate__fadeIn">
+    <div
+      className="container d-flex flex-column align-items-center justify-content-center w-100 vh-100 text-muted animate__animated animate__fadeIn"
+      data-testid="sign-in-page"
+    >
       <div className="d-flex align-items-center justify-content-center display-3 mb-3">
         <span role="img" aria-label="RTL Octopus Logo">
           🐙
@@ -59,7 +62,7 @@ export const SignIn = () => {
       <form
         className="d-flex flex-column align-items-center "
         data-testid="sign-in-form"
-        onSubmit={(e) => handleSignin(e)}
+        onSubmit={handleSignin}
       >
         <div className="form-group mt-3">
           <label className="text-primary" htmlFor="usernameInput">

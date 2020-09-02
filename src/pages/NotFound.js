@@ -4,7 +4,10 @@ import { useHistory } from "react-router-dom";
 export const NotFound = () => {
   const history = useHistory();
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center text-center w-100 vh-100 text-light">
+    <div
+      className="d-flex flex-column justify-content-center align-items-center text-center w-100 full-height-with-nav text-light animate__animated animate__fadeIn"
+      data-testid="not-found-page"
+    >
       <div className="display-3 mb-3">
         <span role="img" aria-label="Ghost emoji">
           👻
@@ -12,10 +15,10 @@ export const NotFound = () => {
       </div>
       <p className="lead">You still haven't found what you're looking for...</p>
       <button
-        className="btn btn-primary mt-2"
+        className="btn btn-link text-primary mt-2"
         onClick={() => history.replace("/")}
       >
-        Back
+        back
       </button>
     </div>
   );

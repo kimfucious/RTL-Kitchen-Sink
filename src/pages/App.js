@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { reverseUsername, getRandomUserData } from "../actions.js/userActions";
 import { Spinner } from "../components/shared/Spinner";
 import { UserDataModal } from "../components/UserDataModal";
+import { getTitleCase } from "../helpers";
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -48,16 +49,19 @@ export const App = () => {
   return (
     <>
       <UserDataModal />
-      <div className="d-flex flex-column align-items-center justify-content-center w-100 full-height-with-nav animate__animated animate__fadeIn">
+      <div
+        className="d-flex flex-column align-items-center justify-content-center w-100 full-height-with-nav animate__animated animate__fadeIn"
+        data-testid="app-page"
+      >
+        <span className="display-1" role="img" aria-label="desert island">
+          🏝️
+        </span>
         <div
-          className={`d-flex justify-content-center display-3 text-center text-muted`}
+          className={`d-flex justify-content-center display-3 text-center text-muted mt-3`}
         >
-          <span role="img" aria-label="desert island">
-            🏝️
-          </span>
           <span>Aloha, </span>
           <span className={`d-flex ml-3 ${animation}`} data-testid="username">
-            {username.split("")[0].toUpperCase() + username.slice(1)}
+            {getTitleCase(username)}
           </span>
           !
         </div>
