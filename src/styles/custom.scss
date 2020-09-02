@@ -1,0 +1,32 @@
+$body-bg: #0d0d0d;
+$primary: #f76304;
+$secondary: #5bc0de;
+$gray-700: #444 !default;
+$gray-800: #303030 !default;
+$gray-900: #222 !default;
+$black: #000 !default;
+$modal-content-bg: #0d0d0d;
+$modal-content-border-color: $gray-700 !default;
+$modal-header-border-color: $gray-700 !default;
+@import "~bootstrap/scss/bootstrap";
+
+.full-height-with-nav {
+  height: calc(100vh - 56px);
+}
+
+.myInput {
+  @extend .form-control;
+  background-color: $body-bg;
+  border-color: $primary;
+  color: $primary;
+}
+
+.myInput:focus {
+  background-color: $body-bg;
+  color: $primary;
+}
+
+.myInput::placeholder {
+  color: $primary;
+  opacity: 0.6;
+}
