@@ -38,7 +38,7 @@ import configureStore from "../store/configureStore";
 const render = (
   ui,
   {
-    initialState = { auth: { userId: "", user: { username: "" } } },
+    initialState = { auth: { userId: "", user: { username: "" } } }, // your state will vary
     store = configureStore(initialState),
     ...renderOptions
   } = {}
@@ -79,7 +79,7 @@ In the above, state is passed as the second argument to the **wrapped** render f
 
 ### React Router
 
-Another this this allows you to do is test Navigation. For example:
+Another thing this allows you to do is test Navigation. For example:
 
 ```js
 test("renders Another page", () => {
@@ -97,6 +97,8 @@ test("renders Another page", () => {
 ```
 
 In the above, the initial Redux state is set. And then, we fire a click event on a React Router `Link` element (in `</NavBar>`), which allows us to test if naviation is working properly.
+
+As this app is using `protected routes`, state will determine which page is ultimately rendered, depending on the presense of `auth: {userId}`.
 
 ## Notes
 
