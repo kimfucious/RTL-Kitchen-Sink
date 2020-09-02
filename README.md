@@ -7,7 +7,7 @@ This repo serves to demonstrate how to test a React app with the following libra
 
 RTL doesn't work out of the box when using these libraries, so there's some work to be done to get the tests working.
 
-If you're seeing warnings like the below, you'll need to do a little work to get your tests running:
+If you're seeing errors/warnings like the below, you'll need to do a little work to get your tests running:
 
 ```console
 could not find react-redux context value; please ensure the component is wrapped in a <Provider>
