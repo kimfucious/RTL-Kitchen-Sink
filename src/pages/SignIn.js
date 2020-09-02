@@ -55,7 +55,7 @@ export const SignIn = () => {
             className="ml-2"
             src={sink}
             alt="sink"
-            style={{ height: 96, width: 96 }}
+            style={{ height: 84, width: 84 }}
           />
         </span>
       </div>
