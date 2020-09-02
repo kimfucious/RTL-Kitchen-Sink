@@ -5,6 +5,10 @@ This repo serves to demonstrate how to test a React app with the following libra
 - Redux (with hooks)
 - React Router
 
+I've created a simple app here, but I'm trying to include many of the real-world scenarios that are used in production apps as simply as possible.
+
+## Why am I doing this?
+
 RTL doesn't work out of the box when using these libraries, so there's some work to be done to get the tests working.
 
 If you're seeing errors/warnings like the below, you'll need to do a little work to get your tests running:
@@ -15,10 +19,11 @@ could not find react-redux context value; please ensure the component is wrapped
 
 ```console
 TypeError: dispatch is not a function
-
 ```
 
-## Wrappers
+My hope is to learn the best way to test using RTL in these combined scenarios and hopefully help others who are trying to do so as well.
+
+## 🎁 Wrappers
 
 The use of wrappers will get tests running and greatly reduces having to retype a lot of boilerplate testing code.
 
