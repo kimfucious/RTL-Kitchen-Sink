@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, render, fireEvent, waitFor } from "../utils/test-utils";
-import { App } from "./App";
+import { App } from "../pages/App";
 
 const stateGeorge = {
   auth: { userId: "1234567890" },
